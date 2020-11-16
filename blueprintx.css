@@ -1,0 +1,789 @@
+* {
+  margin: 0;
+padding: 0;
+}
+
+
+html, body {
+
+
+width:100%;
+
+min-height:100%;
+
+background-image: url("beach.jpg");
+   background-color: black;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 5s ease;
+    -webkit-transition: fade 4s ;
+    -moz-transition: fade 4s ;
+    -o-transition: fade 4s ;
+   -ms-transition: fade 4s ;
+
+}
+
+#formstyle {
+
+  background-color:red;
+  text-align: center;
+  width: 250px;
+  border-radius: 70px;
+  
+
+  opacity: 0.7;
+}
+
+
+
+
+#spacer {
+ padding-left:20px;
+}
+
+
+
+.intro{
+
+    background:black;
+    position:fixed;
+    top: 0;
+    left:0;
+width:100%;
+height:100%;
+display:flex;
+justify-content: center;
+align-items:center;
+
+}
+
+
+.intro-text{
+
+color:white;
+font-size:3em;
+
+}
+
+.slider{
+
+background: grey;
+position: fixed;
+top:0;
+left: 0;
+width: 100%;
+height: 100%;
+transform:translateY(100%);
+
+}
+
+
+.text{
+  font-family: 'Orbitron', sans-serif
+
+}
+
+
+.hide{
+background:black;
+overflow: hidden;
+}
+
+.hide span{
+    transform: translateY(100%);
+    display: inline-block;
+  
+}
+
+
+
+#input2 {
+
+height: 1.0em;
+border-radius: 15%;
+width:7em;
+font-size:3em;
+opacity:0.7;
+display:flex;
+justify-content: space-around;
+}
+
+#input3 {
+
+  height: 1.6em;
+  border-radius: 15%;
+  width:3em;
+  font-size:2em;
+  opacity:0.7;
+  display:flex;
+  justify-content: space-around;
+  
+  }
+
+
+
+
+.container {
+
+display: flex;
+flex-direction: row;
+  flex-wrap: nowrap;
+height:100%;
+  padding-top: 25px;
+
+background-image: url("earth.jpg");
+
+background-repeat: no-repeat;
+background-size: cover;
+transition: all .2s ease;
+-webkit-animation: fade 4s ease;
+-moz-animation: fade 4s ease;
+-o-animation: fade 4s ease;
+animation: fade 4s ease;
+
+}
+
+
+
+
+.apiOutput {
+  color:white;
+  font-size:2em;
+  opacity:0.75;
+  background-color: rgb(107, 40, 32);
+  font-family: 'Anton', sans-serif;
+  width: 8em;
+  display:inline-block;
+}
+
+
+
+#kicker{
+
+  display:flex;
+  width: 70px;
+  height:20px;
+ justify-content:flex-end;
+
+}
+
+
+
+.apiOutput2 {
+  color:white;
+  font-size:2em;
+  opacity:0.75;
+  background-color: rgb(53, 53, 95);
+  font-family: 'Anton', sans-serif;
+  width: 8em;
+  border-radius:10%;
+  display:inline-block;
+ 
+}
+
+
+.apiOutput3 {
+  color:white;
+  font-size:2em;
+  opacity:0.75;
+  background-color:rgb(252, 33, 33);
+  font-family: 'Anton', sans-serif;
+  width:8em;
+  border-radius:10%;
+  display:inline-block;
+
+}
+
+
+.marsApiOutput {
+  color:white;
+  font-size:1em;
+  opacity:0.75;
+  background-color: rgb(53, 53, 95);
+  font-family: 'Anton', sans-serif;
+  width: 4em;
+  border-radius:10%;
+  display:inline-block;
+ 
+}
+
+
+.container-Hiro {
+
+    display: flex;
+    opacity: 0;
+    flex-direction: row;
+      flex-wrap: nowrap;
+    height:100vh;
+      padding-bottom: 800px;
+
+    
+    }
+
+
+    .container-about-me {
+
+      display: flex;
+      opacity: 1;
+      flex-direction: row;
+        flex-wrap: nowrap;
+      height:100vh;
+        padding-bottom: 800px;
+        background-image: url("caliskate.jpg");
+        background-size: cover;
+  
+      
+      }
+   
+
+    .data-side-bar {
+
+    font-weight: bold;
+     display: inline;
+     color:white;
+     font-size: 2em;
+     font-family: 'Share Tech', sans-serif;
+     opacity:0;
+     background-color:black;
+    }
+
+    .data-side-bar-mars {
+
+      font-weight: bold;
+       display: inline;
+       color:white;
+       font-size: 1em;
+       font-family: 'Share Tech', sans-serif;
+       opacity:0;
+       background-color:black;
+       padding-left:1em;
+      }
+  
+   
+ #weatherData{
+display:inline;
+ 
+  }
+
+  #marsData{
+    display:inline;
+     
+      }
+    
+
+
+    .left-content {
+        flex-basis:1;
+        height:100%;
+     ;
+       background-size: cover;
+       padding-top:20%;
+       width:50%;
+       border: 5px groove white;
+opacity:0.95;
+       
+       }
+       
+       
+
+       
+       
+       .right-content  {
+        flex-basis:1;
+       padding-top:300px;
+       color:white;
+       font-size: 2em;
+ z-index:1000;
+       background-size: cover;
+       background-repeat: no-repeat;
+       opacity:0.95;
+       width:50%
+      
+       }       
+
+.container a {
+font-size:80px;
+text-decoration: none;
+color:rgb(92, 17, 7);
+justify-content: center;
+align-content: center;
+padding-left:500px;
+padding-top:525px;
+padding-bottom:25px;
+font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+
+
+
+
+
+#slide2 {
+ padding-top:162px;
+width: 600px;
+padding-left:0px;
+z-index: 1000;
+  float:left;
+
+
+}
+
+
+#Movies_TV {
+
+border-right: 2px solid blue; width: 100px;
+border-bottom: 2px solid blue; width: 100px;
+background-color:blue;
+font: 17px Arial, sans-serif;
+
+}
+
+
+
+  .red-text {
+    color: white;
+	font-size: 50px;
+
+  }
+
+  .Code-Heading  {
+  color: white;
+font-size: 20px;
+
+}
+
+ .white-text {
+    color: white;
+  font-family:sans-serif;
+  opacity: 0;
+
+
+	}
+
+
+nav {
+  z-index: 2000;
+    background: linear-gradient(to left, rgb(51,50,50), black);
+   padding-top: 0px;
+    color: white;
+border-radius: 5px;
+opacity:1;
+	height: 60px;
+	width:100%;
+    transition-property:all;
+	transition-duration:500ms;
+	transition-timing-function: ease-in-out;
+  position: absolute;
+
+}
+
+
+@media only screen and (max-width: 900px) {
+
+  * {
+    margin: 0;
+  padding: 0;
+  }
+  
+  
+  
+
+
+  nav {
+    height: 100%;
+  width:200px;
+  display:block;
+  }
+
+ #kicker{
+   display:block;
+ }
+
+
+
+.left-content {
+
+  padding-left: 300px;
+
+  padding-right:250px;
+}
+
+.right-content {
+ 
+  padding-left: 400px;
+padding-right:250px;
+
+
+}
+
+
+  
+}
+
+
+
+
+
+@media only screen and (orientation: portrait) {
+  * {
+    margin: 0;
+  padding: 0;
+  }
+  
+  
+  html, body {
+  
+  height:100%;
+  width:100%;
+  }
+
+
+  nav {
+    height: 100%;
+  width:200px;
+  display:block;
+  }
+
+ #kicker{
+   display:block;
+ }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+  #nav2 {
+    background: linear-gradient(to left, rgb(42,106,209), black);
+   padding-top: 0px;
+    color: white;
+border-radius: 5px;
+opacity:0.8;
+	height: 25px;
+	width: 77.5;
+    transition-property:all;
+	transition-duration:500ms;
+	transition-timing-function: ease-in-out;
+  position: absolute;
+
+
+  }
+
+  nav li img {
+
+height:50px;
+width:50px;
+display:inline;
+
+
+
+
+
+  }
+
+  nav li img:before {
+content: "";
+  animation: grow 2s infinite;
+
+}
+  a {
+
+
+    text-decoration:none;
+    color:white;
+
+    transition-property:all;
+    transition-duration:50ms;
+    transition-timing-function: ease-in-out;
+  }
+
+
+
+a:hover {
+
+color:white;
+  text-decoration:none;
+}
+
+  li:hover {
+
+
+
+color:white;
+border-radius: 25px;
+
+
+  }
+
+  li a:hover {
+
+    color:white;
+    text-decoration:none;
+  }
+
+
+
+  nav:hover  {
+background: linear-gradient(to left, red, black);
+
+
+
+
+  }
+
+
+
+
+
+  nav ul {
+
+
+      font-family: 'Russo One', sans-serif;
+      width: 300px;
+      display:inline;
+      color:white;
+      height: 0px;
+      font-size:10px;
+      padding: 35px 0px;
+
+transition-property:all;
+transition-duration:1000ms;
+transition-timing-function: ease-in-out;
+
+      }
+
+
+  nav ul li  {
+
+      color: white;
+      font-family: 'Russo One', sans-serif;
+
+      float: left;
+      display:flex ;
+    padding: 0px 20px;
+    transition-property:all;
+    transition-duration:1000ms;
+    transition-timing-function: ease-in-out;
+    position: relative;
+}
+
+
+
+nav ul li ul {
+  position: absolute;
+}
+
+nav ul li a {
+
+
+  font-size:30px;
+ font-family: 'Bebas Neue', cursive;
+
+color:white;
+transition-property:all;
+transition-duration:100ms;
+transition-timing-function: ease-in-out;
+padding-left:20px;
+
+  }
+
+
+    nav ul li a:hover {
+
+
+      font-size:40px;
+      background-color:red;
+      border-radius:5px;
+
+      }
+
+
+
+
+    nav ul li ul li{
+background-color: black;
+color:white;
+
+        font-family: 'Russo One', sans-serif;
+        display:none;
+          font-size:100px;
+
+          transition-property:all;
+          transition-duration:1000ms;
+          transition-timing-function: ease-in-out;
+
+        }
+
+        nav ul li:hover ul li{
+
+
+
+            font-family: 'Dancing Script', cursive;
+
+            display: block;
+
+
+            font-size:15px;
+            float: none;
+
+}
+            
+
+
+
+nav ul li ul:hover li {
+
+
+  font-size:15px;
+
+}
+
+nav ul li ul li a {
+
+
+  font-size: 2.0em;
+
+  color:white;
+
+
+transition-property:all;
+transition-duration:500ms;
+transition-timing-function: ease-in-out;
+
+}
+nav ul li ul li a:hover {
+
+
+  font-size:2.0em;
+  background-color:red;
+
+}
+
+
+
+  h2 {
+  font-family: 'Dancing Script', cursive;
+	width: 400px;
+
+	border-style:solid;
+	border-width:2px;
+	border-color:white;
+		border-style:groove;
+	border-radius: 10px;
+	transition-property:all;
+	transition-duration:500ms;
+	transition-timing-function: ease-in-out;
+  }
+
+    h2:hover {
+    font-family: 'Indie Flower',cursive;
+	width: 400px;
+	border-style:solid;
+	border-width:2px;
+	border-top-color:white;
+	border-bottom-color:white;
+	border-left-color:white;
+	border-style:dotted;
+	background-color:green;
+
+  }
+
+  p {
+    font-size: 16px;
+   background-color: black;
+    font-family: monospace;
+    opacity:.7;
+    padding-left: 30px;
+     padding-right: 30px;
+    border-radius: 15px;
+
+}
+
+
+
+  label {
+
+    color:white;
+    background-color: black;
+  }
+
+  .thick-green-border {
+    border-color: green;
+    border-width: 10px;
+    border-style: solid;
+    border-radius: 50%;
+  }
+
+  .smaller-image {
+    width: 400px;
+  }
+
+
+  .icon-image {
+    width: 200px;
+	border-radius: 10%;
+  float:left;
+  }
+
+
+   .icon-image:hover {
+    width: 210px;
+	border-radius: 10%;
+	border-style:dotted;
+	border-color:white;
+
+
+	transition-property:all;
+	transition-duration:500ms;
+
+  }
+
+ @media only screen and (max-width: 800px ) {
+
+   .left-content {
+     width:202px;
+     padding-top: 60px;
+   }
+
+     .right-content {
+     width:200px;
+        padding-top: 150px;
+   }
+
+   nav {
+     padding-bottom: 40px;
+   }
+
+
+
+   nav ul  {
+      display: block;
+      width: 220px;
+      float:none;
+    }
+
+   nav ul li  {
+      display: block;
+      width: 220px;
+               float:none;
+    }
+
+
+    nav ul li ul  {
+
+      padding-left:100px;
+      display: inline-block;
+
+    }
+
+
+   nav ul li img  {
+     display:none;
+   }}
